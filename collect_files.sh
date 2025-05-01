@@ -1,8 +1,6 @@
 #!/bin/bash
 chmod +x "$0"
-input="$1"
-output="$2"
+input_d="$1"
+output_d="$2"
 
-for file in "$input"/*; do
-    cp "$file" "$output/"
-done
+python3 script.py "$input_d" "$output_d"
